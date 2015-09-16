@@ -50,7 +50,7 @@ pip install --editable ./pymtl
 
 ## Initial testing to make sure PyMTL is working
 
-```cd /home/vc/git-hub/cornell-brg```
+`cd /home/vc/git-hub/cornell-brg`
 
 Running Python
 
@@ -80,9 +80,10 @@ easy_install cffi
 ```
 
 To run the tests, make sure you're in the following directory as super user.
-```/home/vc/git-hub/cornell-brg/pymtl/build```
+`/home/vc/git-hub/cornell-brg/pymtl/build`
 
-## Running Tests: Warning since there are a lot of tests.
+## Running Tests
+Warning since there are a lot of tests.
 
 ```
 py.test ..
@@ -92,20 +93,20 @@ py.test .. --verbose
 The Verilog simulation tests are only executed if the `--test-verilog` flag is 
 provided. For Verilog testing to work, PyMTL requires that Verilator is on your 
 `PATH` and that the `PYMTL_VERILATOR_INCLUDE_DIR` environment:
-```py.test .. --test-verilog```
+`py.test .. --test-verilog`
 
 When you're done testing/developing, you can deactivate the virtualenv.
-```deactivate```
+`deactivate`
 
-## Add Python import path for `import pymtl`.
+## Add Python import path for `import pymtl`
 
 [Stack Overflow - Permanently add a directory to PYTHONPATH]
 (http://stackoverflow.com/questions/3402168/permanently-add-a-directory-to-pythonpath)
 
-```export PYTHONPATH="${PYTHONPATH}:/home/vc/git-hub/cornell-brg/pymtl"```
+`export PYTHONPATH="${PYTHONPATH}:/home/vc/git-hub/cornell-brg/pymtl"`
 
 However, still I'm forced to run Python files with PyMTL objects in the 
 terminal. Also, I cannot use the Sublime's build to quickly check if a script
 has errors or not.
 
-```sudo apt-get install gtkwave```
+`sudo apt-get install gtkwave`
